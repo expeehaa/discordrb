@@ -59,6 +59,15 @@ jobs:
           name: Run RSpec
           command: bundle exec rspec --format progress --format RspecJunitFormatter -o ~/rspec/rspec.xml
 
+  test_ruby_32:
+    docker:
+      - image: ruby:3.2-alpine
+    steps:
+      - setup-env
+      - run:
+          name: Run RSpec
+          command: bundle exec rspec --format progress --format RspecJunitFormatter -o ~/rspec/rspec.xml
+
   rubocop:
     docker:
       - image: ruby:2.7-alpine
@@ -128,6 +137,7 @@ workflows:
       - test_ruby_27
       - test_ruby_30
       - test_ruby_31
+      - test_ruby_32
       - rubocop
       - yard
   deploy:
