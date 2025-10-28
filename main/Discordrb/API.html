@@ -6,7 +6,7 @@
 <title>
   Module: Discordrb::API
   
-    &mdash; Documentation by YARD 0.9.34
+    &mdash; Documentation by YARD 0.9.37
   
 </title>
 
@@ -300,6 +300,29 @@
         <li class="public ">
   <span class="summary_signature">
     
+      <a href="#avatar_decoration_url-class_method" title="avatar_decoration_url (class method)">.<strong>avatar_decoration_url</strong>(avatar_decoration_id, format = &#39;png&#39;)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>make an avatar decoration URL from an avatar decoration ID.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
       <a href="#banner_url-class_method" title="banner_url (class method)">.<strong>banner_url</strong>(server_id, banner_id, format = &#39;webp&#39;)  &#x21d2; Object </a>
     
 
@@ -407,6 +430,29 @@
 
   
     <span class="summary_desc"><div class='inline'><p>Create an OAuth application.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#discovery_splash_url-class_method" title="discovery_splash_url (class method)">.<strong>discovery_splash_url</strong>(server_id, splash_id, format = &#39;webp&#39;)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>Make a discovery splash URL from server and splash IDs.</p>
 </div></span>
   
 </li>
@@ -530,52 +576,6 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#login-class_method" title="login (class method)">.<strong>login</strong>(email, password)  &#x21d2; Object </a>
-    
-
-    
-  </span>
-  
-  
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'><p>Login to the server.</p>
-</div></span>
-  
-</li>
-
-      
-        <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#logout-class_method" title="logout (class method)">.<strong>logout</strong>(token)  &#x21d2; Object </a>
-    
-
-    
-  </span>
-  
-  
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'><p>Logout from the server.</p>
-</div></span>
-  
-</li>
-
-      
-        <li class="public ">
-  <span class="summary_signature">
-    
       <a href="#mutex_wait-class_method" title="mutex_wait (class method)">.<strong>mutex_wait</strong>(mutex)  &#x21d2; Object </a>
     
 
@@ -591,6 +591,29 @@
 
   
     <span class="summary_desc"><div class='inline'><p>Wait for a specified mutex to unlock and do nothing with it afterwards.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#nameplate_url-class_method" title="nameplate_url (class method)">.<strong>nameplate_url</strong>(nameplate_asset, format = &#39;webm&#39;)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>make a nameplate URL from the nameplate asset.</p>
 </div></span>
   
 </li>
@@ -706,6 +729,29 @@
 
   
     <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#server_tag_badge_url-class_method" title="server_tag_badge_url (class method)">.<strong>server_tag_badge_url</strong>(server_id, badge_id, format = &#39;webp&#39;)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>make a server tag badge URL from a server ID and badge ID.</p>
+</div></span>
   
 </li>
 
@@ -951,12 +997,12 @@
       <pre class="lines">
 
 
-222
-223
-224</pre>
+227
+228
+229</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/api.rb', line 222</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/api.rb', line 227</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_achievement_icon_url'>achievement_icon_url</span><span class='lparen'>(</span><span class='id identifier rubyid_application_id'>application_id</span><span class='comma'>,</span> <span class='id identifier rubyid_achievement_id'>achievement_id</span><span class='comma'>,</span> <span class='id identifier rubyid_icon_hash'>icon_hash</span><span class='comma'>,</span> <span class='id identifier rubyid_format'>format</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>webp</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
   <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_cdn_url'>cdn_url</span><span class='embexpr_end'>}</span><span class='tstring_content'>/app-assets/</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_application_id'>application_id</span><span class='embexpr_end'>}</span><span class='tstring_content'>/achievements/</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_achievement_id'>achievement_id</span><span class='embexpr_end'>}</span><span class='tstring_content'>/icons/</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_icon_hash'>icon_hash</span><span class='embexpr_end'>}</span><span class='tstring_content'>.</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_format'>format</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
@@ -993,19 +1039,19 @@ so this is an easy way to catch up on messages</p>
       <pre class="lines">
 
 
+294
+295
+296
+297
 298
 299
 300
 301
 302
-303
-304
-305
-306
-307</pre>
+303</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/api.rb', line 298</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/api.rb', line 294</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_acknowledge_message'>acknowledge_message</span><span class='lparen'>(</span><span class='id identifier rubyid_token'>token</span><span class='comma'>,</span> <span class='id identifier rubyid_channel_id'>channel_id</span><span class='comma'>,</span> <span class='id identifier rubyid_message_id'>message_id</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_request'>request</span><span class='lparen'>(</span>
@@ -1184,15 +1230,55 @@ so this is an easy way to catch up on messages</p>
       <pre class="lines">
 
 
-217
-218
-219</pre>
+222
+223
+224</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/api.rb', line 217</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/api.rb', line 222</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_asset_url'>asset_url</span><span class='lparen'>(</span><span class='id identifier rubyid_application_id'>application_id</span><span class='comma'>,</span> <span class='id identifier rubyid_asset_id'>asset_id</span><span class='comma'>,</span> <span class='id identifier rubyid_format'>format</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>webp</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
   <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_cdn_url'>cdn_url</span><span class='embexpr_end'>}</span><span class='tstring_content'>/app-assets/</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_application_id'>application_id</span><span class='embexpr_end'>}</span><span class='tstring_content'>/</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_asset_id'>asset_id</span><span class='embexpr_end'>}</span><span class='tstring_content'>.</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_format'>format</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="avatar_decoration_url-class_method">
+  
+    .<strong>avatar_decoration_url</strong>(avatar_decoration_id, format = &#39;png&#39;)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>make an avatar decoration URL from an avatar decoration ID.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+240
+241
+242</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/api.rb', line 240</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_avatar_decoration_url'>avatar_decoration_url</span><span class='lparen'>(</span><span class='id identifier rubyid_avatar_decoration_id'>avatar_decoration_id</span><span class='comma'>,</span> <span class='id identifier rubyid_format'>format</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>png</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_cdn_url'>cdn_url</span><span class='embexpr_end'>}</span><span class='tstring_content'>/avatar-decoration-presets/</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_avatar_decoration_id'>avatar_decoration_id</span><span class='embexpr_end'>}</span><span class='tstring_content'>.</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_format'>format</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -1224,12 +1310,12 @@ so this is an easy way to catch up on messages</p>
       <pre class="lines">
 
 
-207
-208
-209</pre>
+212
+213
+214</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/api.rb', line 207</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/api.rb', line 212</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_banner_url'>banner_url</span><span class='lparen'>(</span><span class='id identifier rubyid_server_id'>server_id</span><span class='comma'>,</span> <span class='id identifier rubyid_banner_id'>banner_id</span><span class='comma'>,</span> <span class='id identifier rubyid_format'>format</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>webp</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
   <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_cdn_url'>cdn_url</span><span class='embexpr_end'>}</span><span class='tstring_content'>/banners/</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_server_id'>server_id</span><span class='embexpr_end'>}</span><span class='tstring_content'>/</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_banner_id'>banner_id</span><span class='embexpr_end'>}</span><span class='tstring_content'>.</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_format'>format</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
@@ -1418,20 +1504,20 @@ so this is an easy way to catch up on messages</p>
       <pre class="lines">
 
 
+255
+256
+257
+258
 259
 260
 261
 262
 263
 264
-265
-266
-267
-268
-269</pre>
+265</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/api.rb', line 259</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/api.rb', line 255</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_create_oauth_application'>create_oauth_application</span><span class='lparen'>(</span><span class='id identifier rubyid_token'>token</span><span class='comma'>,</span> <span class='id identifier rubyid_name'>name</span><span class='comma'>,</span> <span class='id identifier rubyid_redirect_uris'>redirect_uris</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_request'>request</span><span class='lparen'>(</span>
@@ -1443,6 +1529,46 @@ so this is an easy way to catch up on messages</p>
     <span class='label'>Authorization:</span> <span class='id identifier rubyid_token'>token</span><span class='comma'>,</span>
     <span class='label'>content_type:</span> <span class='symbol'>:json</span>
   <span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="discovery_splash_url-class_method">
+  
+    .<strong>discovery_splash_url</strong>(server_id, splash_id, format = &#39;webp&#39;)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>Make a discovery splash URL from server and splash IDs</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+207
+208
+209</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/api.rb', line 207</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_discovery_splash_url'>discovery_splash_url</span><span class='lparen'>(</span><span class='id identifier rubyid_server_id'>server_id</span><span class='comma'>,</span> <span class='id identifier rubyid_splash_id'>splash_id</span><span class='comma'>,</span> <span class='id identifier rubyid_format'>format</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>webp</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_cdn_url'>cdn_url</span><span class='embexpr_end'>}</span><span class='tstring_content'>/discovery-splashes/</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_server_id'>server_id</span><span class='embexpr_end'>}</span><span class='tstring_content'>/</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_splash_id'>splash_id</span><span class='embexpr_end'>}</span><span class='tstring_content'>.</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_format'>format</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -1474,12 +1600,12 @@ so this is an easy way to catch up on messages</p>
       <pre class="lines">
 
 
-212
-213
-214</pre>
+217
+218
+219</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/api.rb', line 212</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/api.rb', line 217</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_emoji_icon_url'>emoji_icon_url</span><span class='lparen'>(</span><span class='id identifier rubyid_emoji_id'>emoji_id</span><span class='comma'>,</span> <span class='id identifier rubyid_format'>format</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>webp</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
   <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_cdn_url'>cdn_url</span><span class='embexpr_end'>}</span><span class='tstring_content'>/emojis/</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_emoji_id'>emoji_id</span><span class='embexpr_end'>}</span><span class='tstring_content'>.</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_format'>format</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
@@ -1514,18 +1640,18 @@ so this is an easy way to catch up on messages</p>
       <pre class="lines">
 
 
+306
+307
+308
+309
 310
 311
 312
 313
-314
-315
-316
-317
-318</pre>
+314</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/api.rb', line 310</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/api.rb', line 306</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_gateway'>gateway</span><span class='lparen'>(</span><span class='id identifier rubyid_token'>token</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_request'>request</span><span class='lparen'>(</span>
@@ -1567,18 +1693,18 @@ session start limits</p>
       <pre class="lines">
 
 
+318
+319
+320
+321
 322
 323
 324
 325
-326
-327
-328
-329
-330</pre>
+326</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/api.rb', line 322</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/api.rb', line 318</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_gateway_bot'>gateway_bot</span><span class='lparen'>(</span><span class='id identifier rubyid_token'>token</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_request'>request</span><span class='lparen'>(</span>
@@ -1682,114 +1808,6 @@ X-Ratelimit-Reset header, thus making sure we don&#39;t get 429&#39;d in any sub
 </div>
     
       <div class="method_details ">
-  <h3 class="signature " id="login-class_method">
-  
-    .<strong>login</strong>(email, password)  &#x21d2; <tt>Object</tt> 
-  
-
-  
-
-  
-</h3><div class="docstring">
-  <div class="discussion">
-    <p>Login to the server</p>
-
-
-  </div>
-</div>
-<div class="tags">
-  
-
-</div><table class="source_code">
-  <tr>
-    <td>
-      <pre class="lines">
-
-
-235
-236
-237
-238
-239
-240
-241
-242
-243
-244</pre>
-    </td>
-    <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/api.rb', line 235</span>
-
-<span class='kw'>def</span> <span class='id identifier rubyid_login'>login</span><span class='lparen'>(</span><span class='id identifier rubyid_email'>email</span><span class='comma'>,</span> <span class='id identifier rubyid_password'>password</span><span class='rparen'>)</span>
-  <span class='id identifier rubyid_request'>request</span><span class='lparen'>(</span>
-    <span class='symbol'>:auth_login</span><span class='comma'>,</span>
-    <span class='kw'>nil</span><span class='comma'>,</span>
-    <span class='symbol'>:post</span><span class='comma'>,</span>
-    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_api_base'>api_base</span><span class='embexpr_end'>}</span><span class='tstring_content'>/auth/login</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
-    <span class='label'>email:</span> <span class='id identifier rubyid_email'>email</span><span class='comma'>,</span>
-    <span class='label'>password:</span> <span class='id identifier rubyid_password'>password</span>
-  <span class='rparen'>)</span>
-<span class='kw'>end</span></pre>
-    </td>
-  </tr>
-</table>
-</div>
-    
-      <div class="method_details ">
-  <h3 class="signature " id="logout-class_method">
-  
-    .<strong>logout</strong>(token)  &#x21d2; <tt>Object</tt> 
-  
-
-  
-
-  
-</h3><div class="docstring">
-  <div class="discussion">
-    <p>Logout from the server</p>
-
-
-  </div>
-</div>
-<div class="tags">
-  
-
-</div><table class="source_code">
-  <tr>
-    <td>
-      <pre class="lines">
-
-
-247
-248
-249
-250
-251
-252
-253
-254
-255
-256</pre>
-    </td>
-    <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/api.rb', line 247</span>
-
-<span class='kw'>def</span> <span class='id identifier rubyid_logout'>logout</span><span class='lparen'>(</span><span class='id identifier rubyid_token'>token</span><span class='rparen'>)</span>
-  <span class='id identifier rubyid_request'>request</span><span class='lparen'>(</span>
-    <span class='symbol'>:auth_logout</span><span class='comma'>,</span>
-    <span class='kw'>nil</span><span class='comma'>,</span>
-    <span class='symbol'>:post</span><span class='comma'>,</span>
-    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_api_base'>api_base</span><span class='embexpr_end'>}</span><span class='tstring_content'>/auth/logout</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
-    <span class='kw'>nil</span><span class='comma'>,</span>
-    <span class='label'>Authorization:</span> <span class='id identifier rubyid_token'>token</span>
-  <span class='rparen'>)</span>
-<span class='kw'>end</span></pre>
-    </td>
-  </tr>
-</table>
-</div>
-    
-      <div class="method_details ">
   <h3 class="signature " id="mutex_wait-class_method">
   
     .<strong>mutex_wait</strong>(mutex)  &#x21d2; <tt>Object</tt> 
@@ -1832,6 +1850,46 @@ X-Ratelimit-Reset header, thus making sure we don&#39;t get 429&#39;d in any sub
 </div>
     
       <div class="method_details ">
+  <h3 class="signature " id="nameplate_url-class_method">
+  
+    .<strong>nameplate_url</strong>(nameplate_asset, format = &#39;webm&#39;)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>make a nameplate URL from the nameplate asset.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+245
+246
+247</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/api.rb', line 245</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_nameplate_url'>nameplate_url</span><span class='lparen'>(</span><span class='id identifier rubyid_nameplate_asset'>nameplate_asset</span><span class='comma'>,</span> <span class='id identifier rubyid_format'>format</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>webm</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_cdn_url'>cdn_url</span><span class='embexpr_end'>}</span><span class='tstring_content'>/assets/collectibles/</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_nameplate_asset'>nameplate_asset</span><span class='period'>.</span><span class='id identifier rubyid_delete_suffix'>delete_suffix</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='embexpr_end'>}</span><span class='tstring_content'>/asset.</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_format'>format</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
   <h3 class="signature " id="oauth_application-class_method">
   
     .<strong>oauth_application</strong>(token)  &#x21d2; <tt>Object</tt> 
@@ -1856,18 +1914,18 @@ X-Ratelimit-Reset header, thus making sure we don&#39;t get 429&#39;d in any sub
       <pre class="lines">
 
 
+281
+282
+283
+284
 285
 286
 287
 288
-289
-290
-291
-292
-293</pre>
+289</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/api.rb', line 285</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/api.rb', line 281</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_oauth_application'>oauth_application</span><span class='lparen'>(</span><span class='id identifier rubyid_token'>token</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_request'>request</span><span class='lparen'>(</span>
@@ -2259,15 +2317,55 @@ X-Ratelimit-Reset header, thus making sure we don&#39;t get 429&#39;d in any sub
       <pre class="lines">
 
 
-230
-231
-232</pre>
+235
+236
+237</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/api.rb', line 230</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/api.rb', line 235</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_role_icon_url'>role_icon_url</span><span class='lparen'>(</span><span class='id identifier rubyid_role_id'>role_id</span><span class='comma'>,</span> <span class='id identifier rubyid_icon_hash'>icon_hash</span><span class='comma'>,</span> <span class='id identifier rubyid_format'>format</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>webp</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
   <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_cdn_url'>cdn_url</span><span class='embexpr_end'>}</span><span class='tstring_content'>/role-icons/</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_role_id'>role_id</span><span class='embexpr_end'>}</span><span class='tstring_content'>/</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_icon_hash'>icon_hash</span><span class='embexpr_end'>}</span><span class='tstring_content'>.</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_format'>format</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="server_tag_badge_url-class_method">
+  
+    .<strong>server_tag_badge_url</strong>(server_id, badge_id, format = &#39;webp&#39;)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>make a server tag badge URL from a server ID and badge ID.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+250
+251
+252</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/api.rb', line 250</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_server_tag_badge_url'>server_tag_badge_url</span><span class='lparen'>(</span><span class='id identifier rubyid_server_id'>server_id</span><span class='comma'>,</span> <span class='id identifier rubyid_badge_id'>badge_id</span><span class='comma'>,</span> <span class='id identifier rubyid_format'>format</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>webp</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_cdn_url'>cdn_url</span><span class='embexpr_end'>}</span><span class='tstring_content'>/guild-tag-badges/</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_server_id'>server_id</span><span class='embexpr_end'>}</span><span class='tstring_content'>/</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_badge_id'>badge_id</span><span class='embexpr_end'>}</span><span class='tstring_content'>.</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_format'>format</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -2517,20 +2615,20 @@ hit.</p>
       <pre class="lines">
 
 
+268
+269
+270
+271
 272
 273
 274
 275
 276
 277
-278
-279
-280
-281
-282</pre>
+278</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/api.rb', line 272</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/api.rb', line 268</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_update_oauth_application'>update_oauth_application</span><span class='lparen'>(</span><span class='id identifier rubyid_token'>token</span><span class='comma'>,</span> <span class='id identifier rubyid_name'>name</span><span class='comma'>,</span> <span class='id identifier rubyid_redirect_uris'>redirect_uris</span><span class='comma'>,</span> <span class='id identifier rubyid_description'>description</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_icon'>icon</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_request'>request</span><span class='lparen'>(</span>
@@ -2621,20 +2719,20 @@ hit.</p>
       <pre class="lines">
 
 
+329
+330
+331
+332
 333
 334
 335
 336
 337
 338
-339
-340
-341
-342
-343</pre>
+339</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/api.rb', line 333</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/api.rb', line 329</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_validate_token'>validate_token</span><span class='lparen'>(</span><span class='id identifier rubyid_token'>token</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_request'>request</span><span class='lparen'>(</span>
@@ -2677,19 +2775,19 @@ hit.</p>
       <pre class="lines">
 
 
+342
+343
+344
+345
 346
 347
 348
 349
 350
-351
-352
-353
-354
-355</pre>
+351</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/api.rb', line 346</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/api.rb', line 342</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_voice_regions'>voice_regions</span><span class='lparen'>(</span><span class='id identifier rubyid_token'>token</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_request'>request</span><span class='lparen'>(</span>
@@ -2751,9 +2849,9 @@ hit.</p>
 </div>
 
       <div id="footer">
-  Generated on Fri Nov  3 11:04:02 2023 by
+  Generated on Tue Oct 28 01:19:22 2025 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.9.34 (ruby-2.7.8).
+  0.9.37 (ruby-3.3.10).
 </div>
 
     </div>

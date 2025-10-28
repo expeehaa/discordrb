@@ -6,7 +6,7 @@
 <title>
   Module: Discordrb::Errors
   
-    &mdash; Documentation by YARD 0.9.34
+    &mdash; Documentation by YARD 0.9.37
   
 </title>
 
@@ -471,6 +471,21 @@
 </div>
         </dt>
         <dd><pre class="code"><span class='const'>Unauthorised</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="#Code-class_method" title="Discordrb::Errors.Code (method)">Code</a></span></span><span class='lparen'>(</span><span class='int'>40_001</span><span class='rparen'>)</span></pre></dd>
+      
+        <dt id="UnableToBulkBanUsers-constant" class="">UnableToBulkBanUsers =
+          <div class="docstring">
+  <div class="discussion">
+    <p>Unable to bulk ban any users</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+        </dt>
+        <dd><pre class="code"><span class='const'><span class='object_link'><a href="#Code-class_method" title="Discordrb::Errors.Code (method)">Code</a></span></span><span class='lparen'>(</span><span class='int'>500_000</span><span class='rparen'>)</span></pre></dd>
       
         <dt id="MissingAccess-constant" class="">MissingAccess =
           <div class="docstring">
@@ -996,7 +1011,7 @@ rubocop:disable Naming/MethodName</p>
       <pre class="code"><span class="info file"># File 'lib/discordrb/errors.rb', line 101</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_error_class_for'>error_class_for</span><span class='lparen'>(</span><span class='id identifier rubyid_code'>code</span><span class='rparen'>)</span>
-  <span class='ivar'>@code_classes</span><span class='lbracket'>[</span><span class='id identifier rubyid_code'>code</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='const'><span class='object_link'><a href="#UnknownError-constant" title="Discordrb::Errors::UnknownError (constant)">UnknownError</a></span></span>
+  <span class='ivar'>@code_classes</span><span class='lbracket'>[</span><span class='id identifier rubyid_code'>code</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='const'><span class='object_link'><a href="#Code-class_method" title="Discordrb::Errors.Code (method)">Code</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_code'>code</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -1008,9 +1023,9 @@ rubocop:disable Naming/MethodName</p>
 </div>
 
       <div id="footer">
-  Generated on Fri Nov  3 11:04:02 2023 by
+  Generated on Tue Oct 28 01:19:22 2025 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.9.34 (ruby-2.7.8).
+  0.9.37 (ruby-3.3.10).
 </div>
 
     </div>
